@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+.tasks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tasks li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.tasks li.pending {
+    background-color: #fff3cd;
+}
+
+.tasks li.completed {
+    background-color: #d4edda;
+}
+
+.tasks li.past-due {
+    background-color: #f8d7da;
+}
+
+.tasks .task-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tasks .task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.tasks .task-actions button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.tasks .task-actions .complete-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.tasks .task-actions .delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
